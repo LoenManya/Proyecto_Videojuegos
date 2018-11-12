@@ -1,0 +1,8 @@
+//Primera iteración
+spring.jpa.hibernate.ddl-auto=create
+
+//Segunda iteración
+        // spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/aos
+spring.datasource.username=root
+spring.datasource.password=gimbernat
