@@ -8,6 +8,10 @@ import javax.persistence.*;
 
 public class Persona {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
     private long Dni;
 
     private String nombre;
