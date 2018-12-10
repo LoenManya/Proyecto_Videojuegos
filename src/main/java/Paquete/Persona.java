@@ -12,7 +12,13 @@ public class Persona {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private long Dni;
+    private String Dni;
+    public String getDni() {
+        return Dni;
+    }
+    public void setDni(String dni) {
+        this.Dni = dni;
+    }
 
     private String nombre;
     public String getNombre() {
