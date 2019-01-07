@@ -43,8 +43,8 @@ public class  inscripcionController {
             return personaRepository.findById(personaId).map(persona -> {
             inscripcion.setPersona(persona);
             return inscripcionRepository.save(inscripcion);
-            }).orElseThrow(() -> new ResourceNotFoundException("PostId " + personaId + " not found"));
-        }).orElseThrow(() -> new ResourceNotFoundException("PostId " + personaId + " not found"));
+            }).orElseThrow(() -> new ResourceNotFoundException("Id Persona " + personaId + " not found"));
+        }).orElseThrow(() -> new ResourceNotFoundException("Id Videojuego " + videojuegoId + " not found"));
     }
 
 
