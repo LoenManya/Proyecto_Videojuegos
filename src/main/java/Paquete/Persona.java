@@ -11,6 +11,14 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    public long getId() {
+        return id;
+    }
+    public void setId(long id) {
+        this.id = id;
+    }
+
+
 
     private String Dni;
     public String getDni() {
@@ -57,7 +65,8 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" +
-                "Dni=" + Dni +
+                "Id=" + id +
+                ", Dni='" + Dni + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", email='" + email + '\'' +
